@@ -1,57 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Coming Soon</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #add8e6; /* light blue */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e0f2ff; /* soft light blue */
+      color: #222;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
+      padding: 60px 20px;
     }
 
-    .coming-soon {
-      font-size: 3em;
-      font-weight: bold;
-      color: #ffffff;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
-      margin-bottom: 30px;
+    h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+      color: #003366;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      color: #444;
     }
 
     .image-container {
-      width: 90%;
-      max-width: 600px;
+      width: 100%;
+      max-width: 700px;
+      margin-bottom: 40px;
     }
 
     .image-container img {
       width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    .description-box {
+      max-width: 700px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      font-size: 1.05em;
+      line-height: 1.7;
+      color: #333;
+      text-align: left;
     }
 
     .owners {
-      margin-top: 20px;
-      font-size: 1.2em;
-      color: #333;
+      margin-top: 25px;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 1em;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <div class="coming-soon">Coming soon</div>
+  <h1>Coming Soon</h1>
+  <div class="subtitle">An exciting new project is on the horizon.</div>
 
   <div class="image-container">
-    <!-- Replace with your image path or URL -->
-    <img src="img/fiskur.jpeg" alt="Coming Soon Image">
+    <img src="img/fiskur.jpeg" alt="Preview of the project">
+  </div>
+
+  <div class="description-box">
+    <p>
+      We're building an AI agent that automates the paperwork, coordination, and communication required to export seafood internationally - starting with farmed fish. Exporting fish is highly manual today—every shipment involves dozens of documents (invoices, packing lists, health certificates, customs forms) and back-and-forth emails with buyers, freight forwarders, and customs agents across time zones and languages. This process is slow, error-prone, and expensive.
+    </p>
+    <p>
+      Our product will use LLMs and agents to auto-generate required export documents, coordinate with other stakeholders via email or API, and translate and respond to inquiries in multiple languages. We start with seafood exports because the workflows are painful, high-value, and semi-standardized. Over time, we’ll expand to other industries and become the AI back office for international food trade.
+    </p>
   </div>
 
   <div class="owners">
